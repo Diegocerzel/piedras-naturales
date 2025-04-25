@@ -457,6 +457,7 @@ class StoneComponent extends LitElement {
       }
       .stone-content {
         gap: var(--dynamic-padding-1);
+        margin-bottom: 5rem;
       }
       .color-group {
         width: 100%;
@@ -650,6 +651,7 @@ class StoneComponent extends LitElement {
         }
         .stone-content {
           gap: var(--dynamic-padding-2);
+          margin-bottom: 3rem;
         }
         .color-group {
           --stone-w: 640px;
@@ -692,6 +694,7 @@ class StoneComponent extends LitElement {
         }
         .stone-content {
           gap: var(--dynamic-padding-1);
+          margin-bottom: 4rem;
         }
         .color-group {
           --stone-w: 750px;
