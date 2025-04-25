@@ -522,6 +522,7 @@ nav a.active::after {
   margin-bottom: var(--dynamic-padding-1);
   padding: var(--dynamic-padding-1) var(--dynamic-padding-1);
   background: var(--theme-beige);
+  display: none !important;
 }
 
 /**/
