@@ -1,0 +1,17 @@
+section.contacto{
+    flex-wrap:nowrap;
+    padding-bottom:0;
+}
+.contact {
+    width: 50% !important;
+    height: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contact.left p {
+    max-width:500px;
+  }
+.contact-right{
+    aspect-ratio: initial;
+}

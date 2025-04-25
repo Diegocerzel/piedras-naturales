@@ -1,0 +1,16 @@
+
+h3{
+  font-size:32px;
+}
+p {
+  font-size: 20px;
+}
+a {
+  font-size: 18px;
+}
+small {
+  font-size: 16px;
+}
+.contact-banner {
+  padding:var(--dynamic-padding-2) var(--dynamic-padding-2);
+}

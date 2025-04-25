@@ -1,0 +1,29 @@
+#index-slider {
+  min-height: 183px;
+}
+#header-keen-slider .keen-slider__slide a h2 {
+  font-size: 28px;
+}
+.presentation p {
+  max-width: 700px;
+}
+.presentation {
+  margin-bottom: 5rem !important;
+}
+.proyectos {
+  --dynamic-w-left: calc(100vw - 65vmin - var(--double-padding));
+  grid-template-columns: var(--dynamic-w-left) 65vmin;
+}
+.project-text p {
+  max-width: 75%;
+}
+.slider-controls > span {
+  height: 50px;
+}
+
+.slider-controls .arrow {
+  width: 50px;
+}
+.slider-controls .slide-count {
+  width: 100px;
+}

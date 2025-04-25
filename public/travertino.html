@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <title>Oliman Stone - Travertino</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Catálogo Oliman Stone de travertino del territorio mexicano de la mejor calidad al mejor precio, con entrega en toda la República"
+    />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="robots" content="max-image-preview:standard" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Oliman Stone - Travertino" />
+    <meta
+      property="og:description"
+      content="Catálogo Oliman Stone de travertino del territorio mexicano de la mejor calidad al mejor precio, con entrega en toda la República"
+    />
+    <!-- ###TO DO###
+    <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+    <meta property="og:url" content="https://www.oliman-stone.com/travertino" />
+    <meta property="og:site_name" content="Oliman Stone" />
+    <meta name="twitter:title" content="Oliman Stone - Travertino">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="LINK TO IMAGE">
+    <meta name="twitter:site" content="@USERNAME">
+    <meta name="twitter:creator" content="@USERNAME">
+    <link rel="apple-touch-icon" href="icon.png">
+    -->
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="canonical" href="https://www.oliman-stone.com/travertino" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="preload" href="css/main.css" as="style" />
+    <link
+      rel="preload"
+      href="css/mobile/mobile-main.css"
+      as="style"
+      media="(max-width: 824px)"
+    />
+    <link
+      rel="preload"
+      href="css/tablet/tablet-main.css"
+      as="style"
+      media="(min-width: 825px)"
+    />
+    <link
+      rel="preload"
+      href="css/desktop/desktop-main.css"
+      as="style"
+      media="(min-width: 1050px)"
+    />
+    <link
+      rel="preload"
+      href="css/lg-desktop/lg-desktop-main.css"
+      as="style"
+      media="(min-width: 1250px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="css/mobile/mobile-main.css"
+      media="(max-width: 824px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/tablet/tablet-main.css"
+      media="(min-width: 825px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/desktop/desktop-main.css"
+      media="(min-width: 1050px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/lg-desktop/lg-desktop-main.css"
+      media="(min-width: 1250px)"
+    />
+    <link rel="modulepreload" href="js/lit-components/Navigation.js" />
+    <link rel="modulepreload" href="js/lit-components/stone-component.js" />
+    <link rel="preload" href="js/main.js" as="script" />
+    <script type="module" src="js/lit-components/Navigation.js"></script>
+    <script type="module" src="js/lit-components/stone-component.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <header-component></header-component>
+      <div class="menu-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button
+          class="mobile-menu-trigger"
+          aria-label="abrir el menu de navigacion"
+        ></button>
+      </div>
+    </header>
+    <main>
+      <section class="content-wrapper travertino">
+        <h1 class="stone-title">TRAVERTINO</h1>
+        <stone-component></stone-component>
+      </section>
+      <section class="contact-banner">
+        <contact-banner
+          alt="imagen de ..."
+          src="/css/images/jpg/banner.jpg"
+        ></contact-banner>
+      </section>
+    </main>
+    <div class="mobile-sidebar">
+      <mobile-menu></mobile-menu>
+    </div>
+    <footer>
+      <footer-component></footer-component>
+    </footer>
+  </body>
+</html>

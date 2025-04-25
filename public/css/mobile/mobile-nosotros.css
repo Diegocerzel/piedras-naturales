@@ -1,0 +1,46 @@
+.nosotros-hero .left,
+.nosotros-hero .right {
+  width: 100%;
+}
+.nosotros-hero h2,
+.nosotros-hero p {
+  max-width: 575px;
+}
+.nosotros-hero .right.image-wrapper {
+  aspect-ratio: 4/3;
+}
+.distingue h2 {
+  text-align: center;
+}
+.nosotros-grid {
+  grid-template-columns: 1fr;
+}
+.empresa .image-wrapper {
+  aspect-ratio: 4/3;
+}
+.empresa h2,
+.empresa p {
+  max-width: 575px;
+  text-align: left;
+}
+.info {
+  justify-content: start;
+}
+@media screen and (min-width: 460px) {
+  .nosotros-hero .right.image-wrapper {
+    aspect-ratio: 16/9;
+  }
+  .empresa h2,
+  .empresa p {
+    text-align: center;
+  }
+  .empresa p {
+    max-width: 575px;
+  }
+  .empresa .image-wrapper {
+    aspect-ratio: 16/9;
+  }
+  .info {
+    justify-content: center;
+  }
+}

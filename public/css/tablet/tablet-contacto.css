@@ -1,0 +1,35 @@
+section.contacto {
+  height: calc(100vh - 100px);
+  margin-top: 0;
+  padding-top: 0;
+}
+.contact{
+  width:100%;
+}
+.contact.left {
+  margin-top: 0;
+  padding-top: var(--dynamic-padding-1);
+  padding-bottom: var(--dynamic-padding-2);
+}
+.contact.left > h2{
+  max-width:700px;
+}
+.contact.left p {
+  max-width:625px;
+}
+.mail .svg-wrap {
+  width: 30px;
+}
+.phone .svg-wrap {
+  width: 25px;
+}
+hr {
+  margin-top: var(--dynamic-padding-3);
+  margin-bottom: var(--dynamic-padding-3);
+}
+.contact.right {
+  background: url("../images/jpg/contactoimg.jpg") no-repeat center;
+  background-size: cover;
+  height: auto;
+  aspect-ratio: 12/5;
+}

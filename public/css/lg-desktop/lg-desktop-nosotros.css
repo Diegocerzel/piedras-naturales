@@ -1,0 +1,12 @@
+.nosotros-hero .left {
+  width: 50%;
+  padding-right: var(--dynamic-padding-2);
+}
+.nosotros-hero .right.image-wrapper {
+  width: 50%;
+  aspect-ratio: 4/3;
+}
+.nosotros-grid {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--dynamic-padding-4);
+}

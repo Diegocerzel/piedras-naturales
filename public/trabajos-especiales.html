@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <title>Oliman Stone - Trabajos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="preload" href="css/main.css" as="style" />
+    <link
+      rel="preload"
+      href="css/mobile/mobile-main.css"
+      as="style"
+      media="(max-width: 824px)"
+    />
+    <link
+      rel="preload"
+      href="css/tablet/tablet-main.css"
+      as="style"
+      media="(min-width: 825px)"
+    />
+    <link
+      rel="preload"
+      href="css/desktop/desktop-main.css"
+      as="style"
+      media="(min-width: 1050px)"
+    />
+    <link
+      rel="preload"
+      href="css/lg-desktop/lg-desktop-main.css"
+      as="style"
+      media="(min-width: 1250px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="css/mobile/mobile-main.css"
+      media="(max-width: 824px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/tablet/tablet-main.css"
+      media="(min-width: 825px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/desktop/desktop-main.css"
+      media="(min-width: 1050px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/lg-desktop/lg-desktop-main.css"
+      media="(min-width: 1250px)"
+    />
+    <link rel="modulepreload" href="js/lit-components/Navigation.js" />
+    <link rel="preload" href="js/main.js" as="script" />
+    <script type="module" src="js/lit-components/Navigation.js"></script>
+    <script src="js/main.js" defer></script>
+    <meta
+      name="description"
+      content="Seleccion de Marmol de calidad al mejor precio para toda la república"
+    />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="robots" content="max-image-preview:standard" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Oliman Stone" />
+    <meta property="og:description" content="" />
+    <!-- ###TO DO###
+    <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+    <meta property="og:url" content="https://www.oliman-stone.com/trabajos-especiales" />
+    <meta property="og:site_name" content="Oliman Stone" />
+    <meta name="twitter:title" content="Oliman Stone - Trabajos">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="LINK TO IMAGE">
+    <meta name="twitter:site" content="@USERNAME">
+    <meta name="twitter:creator" content="@USERNAME">
+    <link rel="apple-touch-icon" href="icon.png">
+    -->
+    <!-- Place favicon.ico in the root directory -->
+    <link
+      rel="canonical"
+      href="https://www.oliman-stone.com/trabajos-especiales"
+    />
+  </head>
+
+  <body>
+    <header>
+      <header-component></header-component>
+      <div class="menu-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button
+          class="mobile-menu-trigger"
+          aria-label="abrir el menu de navigacion"
+        ></button>
+      </div>
+    </header>
+    <main>
+      <section class="content-wrapper trabajos"></section>
+    </main>
+    <div class="mobile-sidebar">
+      <mobile-menu></mobile-menu>
+    </div>
+    <footer>
+      <footer-component></footer-component>
+    </footer>
+  </body>
+</html>

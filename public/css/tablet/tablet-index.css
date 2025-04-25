@@ -1,0 +1,77 @@
+.hero-title > h1 {
+  max-width: 600px;
+}
+.hero-title > p {
+  max-width: 480px;
+}
+
+#index-slider {
+  min-height: 200px;
+}
+
+.presentation p {
+  width: 100%;
+  max-width: 675px;
+  text-align: center;
+}
+
+.presentation {
+  margin-bottom: 4rem !important;
+}
+
+.presentation .image-wrapper {
+  --double-padding: calc(var(--dynamic-padding-1) * 2);
+  max-width: calc(100vw - var(--double-padding));
+}
+
+.selling-points > div {
+  gap: var(--dynamic-padding-1);
+  flex-wrap: nowrap;
+  padding-block-start: 0;
+}
+
+.selling-point {
+  width: 50%;
+}
+
+.selling-point:nth-of-type(2) {
+  margin-top: 0;
+}
+
+.proyectos {
+  --double-padding: calc(var(--dynamic-padding-2) * 2);
+  --dynamic-w-left: calc(100vw - 50vmin - var(--double-padding));
+  grid-template-columns: var(--dynamic-w-left) 50vmin;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "text pics"
+    ". pics";
+  row-gap: var(--dynamic-padding-3);
+}
+
+.project-text {
+  justify-content: start;
+}
+.project-text > h2,
+.project-text > h3 {
+  text-align: left;
+}
+.project-text > p {
+  max-width: 85%;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+.project-pics {
+  margin: 0;
+  width: auto;
+}
+
+.project-pic {
+  aspect-ratio: 16/9;
+}
+
+.project-pic.two {
+  margin-top: var(--dynamic-padding-2);
+}

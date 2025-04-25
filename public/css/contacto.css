@@ -1,0 +1,35 @@
+section.contacto {
+  padding-top: var(--dynamic-padding-1);
+  padding-bottom: var(--dynamic-padding-1);
+  flex-direction: row;
+}
+.contact.left {
+  padding-left: var(--dynamic-padding-2);
+  padding-right: var(--dynamic-padding-2);
+  background: var(--theme-beige);
+}
+.contact.left p {
+  margin-top: var(--dynamic-padding-3);
+}
+hr {
+  display: block;
+  margin-top: var(--dynamic-padding-2);
+  margin-bottom: var(--dynamic-padding-2);
+  border-color: var(--theme-black) !important;
+}
+.mail,
+.phone {
+  align-items: center;
+  gap: 20px;
+}
+.phone {
+  margin-top: var(--dynamic-padding-4);
+}
+.svg-wrap svg {
+  width: 100%;
+}
+.contact.right {
+  background: url("../css/images/jpg/contactoimg.jpg") no-repeat center;
+  background-size: cover;
+  aspect-ratio: 16/9;
+}

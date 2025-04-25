@@ -1,0 +1,39 @@
+section.contacto {
+  margin-top: 0;
+}
+.contact {
+  width: 100%;
+  margin-left: var(--dynamic-padding-2);
+  margin-right: var(--dynamic-padding-2);  
+}
+.contact.left {
+  padding-top: var(--dynamic-padding-2);
+  padding-bottom: var(--dynamic-padding-2);
+}
+.contact.left > h2{
+  max-width:90%;
+}
+.contact.left > p{
+  max-width:95%;
+}
+.contact.right {
+  aspect-ratio:4/3;
+  height:auto;
+}
+.mail .svg-wrap {
+  width:25px;
+}
+.phone .svg-wrap {
+  width:20px;
+}
+.phone a{
+  margin-left: 5px;
+}
+@media screen and (min-width:460px){
+  .contact.left > p{
+    max-width:80%;
+  }
+  .contact.right {
+    aspect-ratio:16/9;
+  }
+}

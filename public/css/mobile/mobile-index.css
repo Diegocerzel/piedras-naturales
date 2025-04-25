@@ -1,0 +1,54 @@
+#index-slider {
+  min-height: 240px;
+}
+
+.presentation .image-wrapper {
+  min-height: 148px;
+}
+
+.selling-points > div {
+  flex-wrap: wrap;
+  gap: var(--dynamic-padding-1);
+}
+
+.proyectos {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "text"
+    "pics";
+  row-gap: var(--dynamic-padding-2);
+}
+
+.project-text {
+  justify-content: center;
+}
+
+.presentation {
+  margin-bottom: 3rem !important;
+}
+
+@media screen and (min-width: 460px) {
+  .hero-title > h1 {
+    max-width: 420px;
+  }
+  .hero-title > p {
+    max-width: 380px;
+  }
+  .presentation p,
+  .selling-point > p,
+  .project-text > p {
+    max-width: 450px;
+  }
+  .project-text > p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #index-slider {
+    min-height: 167px;
+  }
+
+  .presentation .image-wrapper {
+    min-height: 147px;
+  }
+}

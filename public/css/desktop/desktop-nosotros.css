@@ -1,0 +1,21 @@
+.nosotros-hero h2, .nosotros-hero p{
+  text-align: left;
+}
+.nosotros-hero p {
+  max-width: 90%;
+}
+.nosotros-hero .left {
+  justify-content: start;
+  width: 56%;
+  padding-right: var(--dynamic-padding-3);
+}
+.nosotros-hero .right.image-wrapper {
+  width: 44%;
+  margin-top: 0;
+  aspect-ratio: 1/1;
+}
+.empresa h2,.empresa p {
+  max-width: 750px;
+}
+
+

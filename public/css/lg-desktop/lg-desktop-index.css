@@ -1,0 +1,15 @@
+.hero-title > h1 {
+    max-width: 700px;
+  }
+  .hero-title > p {
+    max-width: 520px;
+  }
+  #index-slider {
+    min-height:163px;
+  }
+  
+  .proyectos {
+    --dynamic-w-left:calc(100vw - 90vmin - var(--double-padding));
+    grid-template-columns:var(--dynamic-w-left) 90vmin;
+  }
+  

@@ -1,0 +1,271 @@
+.hero-section {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "."
+    "heading";
+  height: 75vmin;
+  max-height: 400px;
+}
+
+.hero-title {
+  align-items: flex-start !important;
+}
+
+.hero-title > h1 {
+  max-width: 280px;
+  font-family: "Arimo", sans-serif !important;
+}
+.hero-title > p {
+  max-width: 250px;
+}
+
+.hero-section {
+  display: grid;
+  width: 100vw;
+  height: 60vmin;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    ". . . . ."
+    "heading heading heading heading .";
+
+  background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0) 70%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("../css/images/jpg/hero.jpg");
+  background-size: cover, cover;
+  background-position: center, 50% 75%;
+}
+
+.hero-title {
+  grid-area: heading;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: flex-end;
+  align-content: flex-end; */
+  padding-inline-start: var(--dynamic-padding-3);
+  padding-block-end: var(--dynamic-padding-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title > h1 {
+  font-family: "Arimo", sans-serif;
+  line-height: 1.1;
+  color: white;
+}
+.hero-title > p {
+  margin-top: var(--dynamic-padding-4);
+  color: white;
+}
+
+#index-slider {
+  width: 100vw;
+  position: relative;
+  margin-top: var(--dynamic-padding-2);
+  padding-left: var(--dynamic-padding-1);
+  padding-right: var(--dynamic-padding-1);
+}
+
+#header-keen-slider {
+  cursor: pointer;
+}
+
+#header-keen-slider .keen-slider__slide {
+  width: 100%;
+  position: relative;
+}
+
+#header-keen-slider .keen-slider__slide a {
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  z-index: 1;
+  transition: var(--main-transition);
+}
+
+#header-keen-slider .keen-slider__slide a h2 {
+  font-size: 26px;
+  color: white;
+}
+
+#header-keen-slider .keen-slider__slide img {
+  transition: var(--main-transition);
+}
+
+.slider-arrow {
+  width: 5vmin;
+  height: 5vmin;
+  position: absolute;
+}
+.slider-arrow.left {
+  left: calc(var(--dynamic-padding-1) / 2 - 2.5vmin);
+  background-image: url("../css/icons/left-arrow.svg");
+}
+.slider-arrow.right {
+  right: calc(var(--dynamic-padding-1) / 2 - 2.5vmin);
+  background-image: url("../css/icons/right-arrow.svg");
+}
+.presentation h2 {
+  text-align: center;
+}
+.presentation p {
+  width: 100%;
+  max-width: 900px;
+  margin-top: var(--dynamic-padding-3);
+  text-align: center;
+}
+.presentation .center-top-wrap {
+  width: 100%;
+}
+.presentation .image-wrapper {
+  width: 50%;
+  min-width: 300px;
+  margin-top: var(--dynamic-padding-2);
+  aspect-ratio: 1/1;
+}
+.selling-points {
+  background: var(--theme-beige);
+  padding-top: var(--dynamic-padding-1);
+  padding-bottom: var(--dynamic-padding-1);
+}
+.selling-points > div {
+  flex-wrap: wrap;
+  gap: 0;
+}
+.selling-point {
+  width: 100%;
+  margin-top: 0;
+  text-align: center;
+}
+.selling-point > .icon {
+  display: block;
+  width: 12vmin;
+  height: 10vmin;
+}
+.selling-point > .icon svg {
+  width: 100%;
+}
+.selling-point > h3 {
+  width: 100%;
+  margin-top: var(--dynamic-padding-3);
+}
+.selling-point > p {
+  margin-top: var(--dynamic-padding-3);
+}
+.selling-points > .button-link {
+  margin-top: var(--dynamic-padding-1);
+}
+
+.proyectos {
+  display: grid;
+}
+
+.project-text {
+  grid-area: text;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+}
+
+.project-text > h2,
+.project-text > h3 {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.project-text > h3 {
+  margin-top: var(--dynamic-padding-2);
+}
+
+.project-text > p {
+  position: relative;
+  margin-top: var(--dynamic-padding-3);
+  text-align: center;
+}
+
+.project-text > h3::after,
+.project-text > p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: white;
+  transition: all 0.4s linear;
+  transform: scale3d(1, 0, 1);
+  transform-origin: bottom center;
+}
+
+.project-text > h3.animating::after,
+.project-text > p.animating::after {
+  transform: scale3d(1, 1, 1);
+}
+
+.slider-controls {
+  display: flex;
+  margin-top: var(--dynamic-padding-2);
+}
+
+.project-pics {
+  grid-area: pics;
+}
+
+.project-pic {
+  aspect-ratio: 16/9;
+}
+
+.project-pic.two {
+  margin-top: var(--dynamic-padding-2);
+}
+
+.slider-controls {
+  display: flex;
+  margin-top: var(--dynamic-padding-2);
+}
+
+.slider-controls > span {
+  display: block;
+  height: 40px;
+}
+
+.slider-controls .arrow {
+  width: 40px;
+  cursor: pointer;
+}
+
+.slider-controls .arrow.left {
+  background: var(--theme-black) url("../css/icons/left-arrow-white.svg")
+    no-repeat center;
+  background-size: 60%;
+}
+.slider-controls .arrow.right {
+  background: var(--theme-black) url("../css/icons/right-arrow-white.svg")
+    no-repeat center;
+  background-size: 60%;
+}
+.slider-controls .slide-count {
+  width: 80px;
+}
+
+@media screen and (hover: hover) {
+  #header-keen-slider .keen-slider__slide a:hover {
+    opacity: 0;
+  }
+
+  #header-keen-slider .keen-slider__slide a:hover + img {
+    transform: scale(1.1);
+  }
+}

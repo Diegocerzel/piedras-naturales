@@ -1,0 +1,16 @@
+.nosotros-hero h2 {
+  max-width: 800px;
+}
+.nosotros-hero p {
+  max-width: 675px;
+}
+.nosotros-grid {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: var(--dynamic-padding-2);
+}
+.nosotros-grid .item p {
+  max-width: 400px;
+}
+.empresa h2,.empresa p{
+  max-width: 675px;
+}
